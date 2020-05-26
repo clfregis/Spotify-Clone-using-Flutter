@@ -18,7 +18,7 @@ class SpotifyAdmin extends StatelessWidget {
                 onTap: (){
                   Navigator.push(context, MaterialPageRoute(builder: (contex)=>Material(
                     child: ChangeNotifierProvider(
-                      builder: (_)=>Admin(),
+                      create: (_)=>Admin(),
                       child: AddArtist(),
                     ),
                   )));
@@ -33,7 +33,7 @@ class SpotifyAdmin extends StatelessWidget {
                 onTap: (){
                   Navigator.push(context, MaterialPageRoute(builder: (contex)=>Material(
                     child: ChangeNotifierProvider(
-                      builder: (_)=>Admin(),
+                      create: (_)=>Admin(),
                       child: AddCategory(),
                     ),
                   )));
@@ -48,7 +48,7 @@ class SpotifyAdmin extends StatelessWidget {
                 onTap: (){
                   Navigator.push(context, MaterialPageRoute(builder: (contex)=>Material(
                     child: ChangeNotifierProvider(
-                      builder: (_)=>Admin(),
+                      create: (_)=>Admin(),
                       child: AddSong(),
                     ),
                   )));
@@ -63,7 +63,7 @@ class SpotifyAdmin extends StatelessWidget {
                 onTap: (){
                   Navigator.push(context, MaterialPageRoute(builder: (contex)=>Material(
                     child: ChangeNotifierProvider(
-                      builder: (_)=>Admin(),
+                      create: (_)=>Admin(),
                       child: AddAlbum(),
                     ),
                   )));
@@ -259,7 +259,7 @@ class AddSong extends StatelessWidget {
                   onTap: (){
                     Navigator.push(context, MaterialPageRoute(builder: (contex)=>Material(
                       child: ChangeNotifierProvider(
-                        builder: (_)=>Admin(),
+                        create: (_)=>Admin(),
                         child: SelectArtist(),
                       ),
                     )));
@@ -277,7 +277,7 @@ class AddSong extends StatelessWidget {
                   onTap: (){
                     Navigator.push(context, MaterialPageRoute(builder: (contex)=>Material(
                       child: ChangeNotifierProvider(
-                        builder: (_)=>Admin(),
+                        create: (_)=>Admin(),
                         child: SelectCategories(),
                       ),
                     )));
@@ -353,7 +353,7 @@ class AddAlbum extends StatelessWidget {
                   onTap: (){
                     Navigator.push(context, MaterialPageRoute(builder: (contex)=>Material(
                       child: ChangeNotifierProvider(
-                        builder: (_)=>Admin(),
+                        create: (_)=>Admin(),
                         child: SelectArtist(),
                       ),
                     )));

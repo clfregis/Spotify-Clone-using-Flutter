@@ -60,7 +60,7 @@ class SpotifyHome extends StatelessWidget {
                 children: <Widget>[
                   Material(
                     child: ChangeNotifierProvider(
-                      builder: (_)=>RecentlyPlayedLogic(),
+                      create: (_)=>RecentlyPlayedLogic(),
                       child: RecenlyPlayed(),
                     ),
                   )
